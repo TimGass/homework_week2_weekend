@@ -1,4 +1,4 @@
-html {
+ html {
   box-sizing: border-box; }
 
 *,
@@ -80,7 +80,7 @@ header {
     height: 65px;
     position: relative;
     top: -5px;
-    transition: .3s height, border; }
+    transition: .3s ease height, border; }
     header button:hover i {
       color: #FFF; }
   header nav.nav {
@@ -215,14 +215,14 @@ main {
         border: 10px solid #FFF; }
         main section.hero figure.cameraman div.grid:last-child {
           margin-right: 0; }
-        main section.hero figure.cameraman div.grid img {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 40.29137%;
-          padding: 65px 0px 0px 25px; }
-          main section.hero figure.cameraman div.grid img:last-child {
-            margin-right: 0; }
+    main section.hero img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      padding: 65px 0px 0px 25px; }
+      main section.hero img:last-child {
+        margin-right: 0; }
     main section.hero button {
       margin-top: 20px;
       margin-right: 10px;
@@ -295,6 +295,27 @@ main {
     height: 480px; }
     main section.skaters:last-child {
       margin-right: 0; }
+    main section.skaters div.invisible {
+      color: #FFF;
+      position: absolute;
+      margin-top: 80px;
+      left: 0px;
+      width: 100px;
+      height: 95px;
+      background-color: #B4292E;
+      border-bottom: 4px solid #7B797A; }
+      main section.skaters div.invisible br {
+        font-size: 20px; }
+    main section.skaters div.triangle {
+      margin: 0px;
+      margin-top: 80px;
+      left: 100px;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 20px solid #B4292E;
+      border-bottom: 45px solid transparent;
+      border-top: 46px solid transparent; }
     main section.skaters section.section1 {
       float: left;
       display: block;
@@ -414,11 +435,13 @@ main {
       main section.boards a img {
         margin: 0px;
         margin-top: 10px;
-        height: 270px; }
+        height: 270px;
+        border-radius: 70px 70px 70px 70px; }
     main section.boards img:hover {
       position: relative;
-      margin: 0px;
-      transition: .3s margin; }
+      transform: rotate(-360deg);
+      transform-origin: center;
+      transition: 2.7s ease, transform; }
   main section.contact {
     margin-top: 30px;
     margin-bottom: 90px;
